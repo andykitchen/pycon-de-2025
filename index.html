@@ -33,7 +33,13 @@
             <img src="img/gottago.jpg"></img>
           </section>
           <section>
-            <h2>Conceptual Overview</h2>
+            <h2>
+              <s>Review</s><br>
+              <s>Tutorial</s><br>
+              Rambling<br>
+              Conceptual<br>
+              Overview
+            </h2>
           </section>
         </section>
 				<section>
@@ -47,7 +53,7 @@
             </ul>
           </section>
           <section>
-            AI + System 2?
+            <h2>AI + System 2?</h2>
           </section>
         </section>
 
@@ -74,7 +80,8 @@
           <section>
             <h2>Spicy Autocomplete</h2>
             <p>
-              The meaning of life is ______
+              Q: What is the capital of France<br>
+              A: The answer is ______
             </p>
           </section>
         </section>
@@ -93,6 +100,9 @@
               <img src="img/arc-task-grids.jpg">
             </a>
             <caption>ARG-AGI-1</caption>
+          </section>
+          <section>
+            <h2>Fluid Intelligence</h2>
           </section>
           <section>
             <img src="img/arc-scale.jpg">
@@ -150,22 +160,8 @@
 
         <section>
 				  <section>
-            <h2>Supervised Fine-tuning</h2>
-            <p>Just do it like this</p>
-          </section>
-				  <section>
-            <h2>In-Context Learning</h2>
-            <p>Put examples in the prompt</p>
-            <aside>
-              <a href="https://thegradient.pub/in-context-learning-in-context/">
-                &ldquo;In-Context Learning, In Context&rdquo;
-                &mdash; Bashir 2024
-              </a>
-            </aside>
-          </section>
-				  <section>
             <h2>Reinforcement Learning</h2>
-            <p>This is better than that.</p>
+            <p>Do more of that thing that was good</p>
             <ul>
               <li>RLHF &mdash; RL from <em>Human</em> Feedback</li>
               <li>RLAIF &mdash; RL from <em>AI</em> feedback</li>
@@ -174,14 +170,38 @@
           </section>
 				  <section>
             <h2>Chain of Thought</h2>
-            <p>&ldquo;Think step-by-step&rdquo;</p>
-            <a href="https://arxiv.org/abs/2205.11916">
-              &ldquo;Large Language Models are Zero-Shot Reasoners&rdquo;
-              &mdash; Kojima 2022
-            </a>
+            <img src="img/cot.png" alt="Let's think step by step">
+            <aside>
+              <a href="https://arxiv.org/abs/2205.11916">
+                &ldquo;Large Language Models are Zero-Shot Reasoners&rdquo;
+                &mdash; Kojima 2022
+              </a>
+            </aside>
           </section>
           <section>
             <h2>Reasoning = Chain-of-thought + Reinforcement Learning</h2>
+          </section>
+          <section>
+            <h2>DeepSeek-R1</h2>
+            <aside>
+              <a href="https://arxiv.org/abs/2501.12948">
+                &ldquo;DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning&rdquo;
+                &mdash; DeepSeek 2025
+              </a>
+            </aside>
+          </section>
+          <section>
+            <p style="border: solid white 4px;">Prompt</p>
+            <p style="border: solid white 4px;">
+              &lt;think&gt;<br>
+              ...<em>reasoning</em>...<br>
+              &lt;/think&gt;<br>
+            </p>
+            <p style="border: solid white 4px;">Answer</p>
+          </section>
+          <section>
+            <h2>The &lsquo;Aha&rsquo; moment</h2>
+            <img src="img/r1-aha.png">
           </section>
         </section>
         
@@ -306,14 +326,14 @@ pattern observed in the reference examples.
             <p><a href="https://www.lesswrong.com/posts/byNYzsfFmb2TpYFPW/o1-a-technical-primer">Some kind of test-time <em>search?</em></a></p>
           </section>
           <section>
-            <h4>Secret sauce?</h4>
+            <h4>The current <em>magic recipe</em>✨</h4>
             <ul>
               <li>Tools (reach outside the model)</li>
               <li>Agency (make and follow plans)</li>
               <li>Induction (writing programs)</li>
               <li>Transduction (pattern matching)</li>
             </ul>
-            <p>Unified, can be end-to-end trained using RL.</p>
+            <p>Unified, end-to-end trained using RL</p>
           </section>
           <section>
             <a href="https://github.com/arcprize/model_baseline/blob/main/prompt_example_o3.md">
@@ -369,6 +389,20 @@ pattern observed in the reference examples.
               to the model's current reasoning trace to encourage more
               exploration
             </q>
+          </section>
+				  <section>
+            <h2>Supervised Fine-tuning</h2>
+            <p>Just do it like this</p>
+          </section>
+				  <section>
+            <h2>In-Context Learning</h2>
+            <p>Put examples in the prompt</p>
+            <aside>
+              <a href="https://thegradient.pub/in-context-learning-in-context/">
+                &ldquo;In-Context Learning, In Context&rdquo;
+                &mdash; Bashir 2024
+              </a>
+            </aside>
           </section>
         </section>
 
