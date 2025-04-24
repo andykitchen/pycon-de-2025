@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 	<head>
+    <!-- https://2025.pycon.de/talks/AYN837/ -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
@@ -12,12 +13,349 @@
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+    <style>
+      :root {
+        --r-heading-text-transform: none;
+      }
+    </style>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+        <section>
+          <section>
+            <h1>Machine Reasoning</h1>
+            <p>and System 2 Thinking</p>
+          </section>
+          <section>
+            <h2>Things are moving fast</h2>
+            <img src="img/gottago.jpg"></img>
+          </section>
+          <section>
+            <h2>Conceptual Overview</h2>
+          </section>
+        </section>
+				<section>
+          <section>
+            <img src="img/thinking-fast-and-slow.jpg" height="500px" alt="Thinking Fast and Slow">
+          </section>
+          <section>
+            <ul>
+              <li>System 1 &mdash; fast, automatic, pattern matching</li>
+              <li>System 2 &mdash; slow, effortful, calculating</li>
+            </ul>
+          </section>
+          <section>
+            AI + System 2?
+          </section>
+        </section>
+
+				<section>
+				  <section>
+            <h2>Let's work step-by-step!</h2>
+          </section>
+          <section>
+            <h2>Tokens</h2>
+            <a href="https://platform.openai.com/tokenizer">
+              <img src="img/tokens.png">
+            </a>
+          </section>
+				  <section>
+            <h2>Spicy Autocomplete</h2>
+            <p>
+              The cat sat on the ______
+            </p>
+            <a href="https://arxiv.org/abs/1706.03762">
+              &ldquo;Attention Is All You Need&rdquo;
+              &mdash; Vaswani 2017
+            </a>
+          </section>
+          <section>
+            <h2>Spicy Autocomplete</h2>
+            <p>
+              The meaning of life is ______
+            </p>
+          </section>
+        </section>
+
+				<section>
+				  <section>
+            <h2>Abstract Reasoning Corpus</h2>
+            <p>ARC-AGI</p>
+          </section>
+          <section>
+            <img src="img/arc-prize-logo.svg">
+          </section>
+          <section>
+            <a href="https://arcprize.org/">
+              <img src="img/arc-task-grids.jpg">
+            </a>
+            <caption>ARG-AGI-1</caption>
+          </section>
+          <section>
+            <img src="img/arc-scale.jpg">
+          </section>
+          <section>
+            <img src="img/chollet-unhappy.jpg">
+          </section>
+          <section>
+            <img src="img/o3-arc.jpg">
+          </section>
+				  <section>
+            <h2>ARC-AGI-2</h2>
+          </section>
+          <section>
+            <img src="img/arc2-leaderboard.png">
+          </section>
+          <section>
+            <img src="img/chollet-evil.png">
+          </section>
+          <section>
+            <h3>Symbolic Interpretation</h3>
+            <img src="img/arc-agi-2-unsolved-1.png">
+            <caption>ARG-AGI-2</caption>
+          </section>
+          <section>
+            <h3>Compositional Reasoning</h3>
+            <img src="img/arc-agi-2-unsolved-2.png">
+            <caption>ARG-AGI-2</caption>
+          </section>
+          <section>
+            <h3>Contextual Rule Application</h3>
+            <img src="img/arc-agi-2-unsolved-3.png">
+            <caption>ARG-AGI-2</caption>
+          </section>
+          <section>
+            <img src="img/frontier-math.png">
+          </section>
+          <section>
+            <h3>FrontierMath</h3>
+            <ul>
+              <li>25% olympiad level
+              <li>50% mid-difficulty
+              <li>25% expert mathematician would take weeks to solve
+            </ul>
+          </section>
+          <section>
+            <h3>FrontierMath</h3>
+            <ul>
+              <li>OpenAI paid for early access</li>
+              <li>o3 gets 10-25%</li>
+              <li>GPT-4, Claude <2%</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+				  <section>
+            <h2>Supervised Fine-tuning</h2>
+            <p>Just do exactly this</p>
+          </section>
+				  <section>
+            <h2>Reinforcement Learning</h2>
+            <p>This is better than that</p>
+            <ul>
+              <li>RLHF &mdash; RL from <em>Human</em> Feedback</li>
+              <li>RLAIF &mdash; RL from <em>AI</em> feedback</li>
+              <li>RLVR &mdash; RL from <em>Verifiable Rewards</em></li>
+            </ul>
+          </section>
+				  <section>
+            <h2>In-Context Learning</h2>
+          </section>
+				  <section>
+            <h2>Chain of Thought</h2>
+            <a href="https://arxiv.org/abs/2205.11916">
+              &ldquo;Large Language Models are Zero-Shot Reasoners&rdquo;
+              &mdash; Kojima 2022
+            </a>
+          </section>
+				  <section>
+            <h2>Tools</h2>
+            <a href="https://arxiv.org/abs/2302.04761">
+              &ldquo;Toolformer&rdquo;
+              &mdash; Schick 2023
+            </a>
+            <img src="img/toolformer.png"></img>
+          </section>
+          <section>
+            <h2>Agency</h2>
+            <p>What even is it?</p>
+          </section>
+          <section>
+            <h2>s1: Simple test-time scaling</h2>
+            <p>
+              <a href="https://arxiv.org/abs/2501.19393">Muennighoff 2025</a>
+            </p>
+            <q>
+              If we want the model to spend more test-time
+              compute on a problem, we suppress the generation of the
+              end-of-thinking token delimiter and instead append &lsquo;Wait&rsquo;
+              to the model's current reasoning trace to encourage more
+              exploration
+            </q>
+          </section>
+        </section>
+        
+        <section>
+          <section>
+            <h2>Test-time Training</h2>
+            <aside>
+              <a href="https://arxiv.org/abs/2411.07279">
+                &ldquo;The Surprising Effectiveness of Test-Time Training for Few-Shot Learning&rdquo;
+                &mdash; Akyürek 2024
+              </a>
+            </aside>
+          </section>
+          <section>
+            <h2>Transduction</h2>
+            <p>Just output the answer</p>
+          </section>
+          <section>
+            <pre>
+Find the common rule that maps an input grid to an output grid,
+given the examples below.
+
+Example 1:
+
+Input:
+0 0 0 5 0
+0 5 0 0 0
+0 0 0 0 0
+0 5 0 0 0
+0 0 0 0 0
+Output:
+1 0 0 0 0 0 5 5 0 0
+0 1 0 0 0 0 5 5 0 0
+0 0 5 5 0 0 0 0 1 0
+0 0 5 5 0 0 0 0 0 1
+1 0 0 0 1 0 0 0 0 0
+0 1 0 0 0 1 0 0 0 0
+0 0 5 5 0 0 1 0 0 0
+0 0 5 5 0 0 0 1 0 0
+0 0 0 0 1 0 0 0 1 0
+0 0 0 0 0 1 0 0 0 1
+            </pre>
+          </section>
+          <section>
+            <pre>
+Below is a test input grid.
+Predict the corresponding output
+grid by applying the rule you found.
+Your final answer should just be the
+text output grid itself.
+
+Input:
+0 4 0
+0 0 0
+4 0 0
+            </pre>
+          </section>
+          <section>
+            <h2>Induction</h2>
+            <p>Output (Python) programs</p>
+            <p><em>Also called program synthesis</em></p>
+          </section>
+          <section>
+            <pre>
+----- Role: system --------------------
+You are a world-class puzzle solver with
+exceptional pattern recognition skills and expertise
+in Python programming. Your task is to analyze puzzles
+and provide Python solutions.
+            </pre>
+          </section>
+          <section>
+            <pre>
+----- Role: user --------------------
+Given input-output grid pairs as reference examples,
+carefully observe the patterns to predict the
+output grid for new test input.
+[...]
+            </pre>
+          </section>
+          <section>
+            <pre>
+[...]
+Write a Python function &lsquo;transform&rsquo;
+that can convert any given input grid to
+its corresponding output grid based on the
+pattern observed in the reference examples.
+            </pre>
+          </section>
+          <section>
+            <h2>Induction + Transduction</h2>
+            <aside>
+              <a href="https://arxiv.org/abs/2411.02272">
+                &ldquo;Combining Induction and Transduction for Abstract Reasoning&rdquo;
+                &mdash; Li 2024
+              </a>
+            </aside>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2><a href="https://arcprize.org/blog/oai-o3-pub-breakthrough">o3</a></h2>
+            <p>Ugh, speculation</p>
+          </section>
+          <section>
+            <p><a href="https://www.lesswrong.com/posts/byNYzsfFmb2TpYFPW/o1-a-technical-primer">Some kind of test-time <em>search?</em></a></p>
+          </section>
+          <section>
+            <h4>Secret sauce?</h4>
+            <ul>
+              <li>Tools (functionality outside the model)</li>
+              <li>Agency (make and follow plans)</li>
+              <li>Induction (writing programs)</li>
+              <li>Transduction (pattern matching)</li>
+            </ul>
+            <p>Unified, can be end-to-end trained using RL.</p>
+          </section>
+          <section>
+            <a href="https://github.com/arcprize/model_baseline/blob/main/prompt_example_o3.md">
+              <img src="img/o3-example.png" height="800px">
+            </a>
+          </section>
+        </section>
+
+        <section>
+				  <section>
+            <h2>The Era of Experience</h2>
+            <q>
+              A new generation of agents will acquire superhuman capabilities by learning predominantly from experience.
+            </q>
+            <aside>
+              <a href="https://storage.googleapis.com/deepmind-media/Era-of-Experience%20/The%20Era%20of%20Experience%20Paper.pdf">&mdash; Essay by D. Silver, R. Sutton, 2025</a>
+            </aside>
+          </section>
+        </section>
+
+        <section>
+          <pre>
+            And what rough beast, its hour come round at last,
+            Slouches towards Bethlehem to be born?
+
+            W. B. Yeats (1989)
+          </pre>
+        </section>
+
+        <section>
+          <section>
+            <ul>
+              <li><a href="https://openai.com/index/deliberative-alignment/">Deliberative alignment</a></li>
+              <li><a href="https://arxiv.org/abs/2212.08073">Constitutional AI</a></li>
+            </ul>
+          </section>
+				  <section>Code Execution (Program Synthesis)</section>
+          <section>Outcome Reward Model</section>
+          <section>Process Reward Model</section>
+        </section>
+
+        <section>
+          <section></section>
+        </section>
 			</div>
 		</div>
 
