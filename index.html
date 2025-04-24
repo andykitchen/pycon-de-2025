@@ -83,6 +83,7 @@
 				  <section>
             <h2>Abstract Reasoning Corpus</h2>
             <p>ARC-AGI</p>
+            <q>The only unbeaten benchmark that's easy for humans, but hard for AI</q>
           </section>
           <section>
             <img src="img/arc-prize-logo.svg">
@@ -150,11 +151,21 @@
         <section>
 				  <section>
             <h2>Supervised Fine-tuning</h2>
-            <p>Just do exactly this</p>
+            <p>Just do it like this</p>
+          </section>
+				  <section>
+            <h2>In-Context Learning</h2>
+            <p>Put examples in the prompt</p>
+            <aside>
+              <a href="https://thegradient.pub/in-context-learning-in-context/">
+                &ldquo;In-Context Learning, In Context&rdquo;
+                &mdash; Bashir 2024
+              </a>
+            </aside>
           </section>
 				  <section>
             <h2>Reinforcement Learning</h2>
-            <p>This is better than that</p>
+            <p>This is better than that.</p>
             <ul>
               <li>RLHF &mdash; RL from <em>Human</em> Feedback</li>
               <li>RLAIF &mdash; RL from <em>AI</em> feedback</li>
@@ -162,39 +173,15 @@
             </ul>
           </section>
 				  <section>
-            <h2>In-Context Learning</h2>
-          </section>
-				  <section>
             <h2>Chain of Thought</h2>
+            <p>&ldquo;Think step-by-step&rdquo;</p>
             <a href="https://arxiv.org/abs/2205.11916">
               &ldquo;Large Language Models are Zero-Shot Reasoners&rdquo;
               &mdash; Kojima 2022
             </a>
           </section>
-				  <section>
-            <h2>Tools</h2>
-            <a href="https://arxiv.org/abs/2302.04761">
-              &ldquo;Toolformer&rdquo;
-              &mdash; Schick 2023
-            </a>
-            <img src="img/toolformer.png"></img>
-          </section>
           <section>
-            <h2>Agency</h2>
-            <p>What even is it?</p>
-          </section>
-          <section>
-            <h2>s1: Simple test-time scaling</h2>
-            <p>
-              <a href="https://arxiv.org/abs/2501.19393">Muennighoff 2025</a>
-            </p>
-            <q>
-              If we want the model to spend more test-time
-              compute on a problem, we suppress the generation of the
-              end-of-thinking token delimiter and instead append &lsquo;Wait&rsquo;
-              to the model's current reasoning trace to encourage more
-              exploration
-            </q>
+            <h2>Reasoning = Chain-of-thought + Reinforcement Learning</h2>
           </section>
         </section>
         
@@ -296,6 +283,21 @@ pattern observed in the reference examples.
         </section>
 
         <section>
+				  <section>
+            <h2>Tools</h2>
+            <a href="https://arxiv.org/abs/2302.04761">
+              &ldquo;Toolformer&rdquo;
+              &mdash; Schick 2023
+            </a>
+            <img src="img/toolformer.png"></img>
+          </section>
+          <section>
+            <h2>Agency</h2>
+            <p>What even is it?</p>
+          </section>
+        </section>
+
+        <section>
           <section>
             <h2><a href="https://arcprize.org/blog/oai-o3-pub-breakthrough">o3</a></h2>
             <p>Ugh, speculation</p>
@@ -306,7 +308,7 @@ pattern observed in the reference examples.
           <section>
             <h4>Secret sauce?</h4>
             <ul>
-              <li>Tools (functionality outside the model)</li>
+              <li>Tools (reach outside the model)</li>
               <li>Agency (make and follow plans)</li>
               <li>Induction (writing programs)</li>
               <li>Transduction (pattern matching)</li>
@@ -349,8 +351,25 @@ pattern observed in the reference examples.
             </ul>
           </section>
 				  <section>Code Execution (Program Synthesis)</section>
-          <section>Outcome Reward Model</section>
-          <section>Process Reward Model</section>
+          <section>
+            <ul>
+              <li>Outcome Reward Model
+              <li>Process Reward Model
+            </ul>
+          </section>
+          <section>
+            <h2>s1: Simple test-time scaling</h2>
+            <p>
+              <a href="https://arxiv.org/abs/2501.19393">Muennighoff 2025</a>
+            </p>
+            <q>
+              If we want the model to spend more test-time
+              compute on a problem, we suppress the generation of the
+              end-of-thinking token delimiter and instead append &lsquo;Wait&rsquo;
+              to the model's current reasoning trace to encourage more
+              exploration
+            </q>
+          </section>
         </section>
 
         <section>
